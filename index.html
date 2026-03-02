@@ -281,17 +281,7 @@
     </div>
   </section>
 
-  <!-- 幕0：开始页（像你截图：标题+按钮） -->
-  <section class="screen" id="screen0">
-    <div class="card">
-      <h1>我有话想对你说… 🥺</h1>
-      <button class="startBtn" id="startBtn">点我一下~</button>
-      <div class="hint" id="hint0">（点一下开始，音乐就会播放哦🎧）</div>
-    </div>
-  </section>
-
-  <!-- 幕1：第一幕打字机 + 按钮 -->
-
+  <!-- 幕1：打字机 + 愿意/不愿意 -->
   <section class="screen hidden" id="screen1">
     <div class="card">
       <h1>我有话想对你说… Ovo</h1>
@@ -299,99 +289,65 @@
       <div class="preLines" id="preLines">
 
         <!-- 故事版 -->
-
         <div class="typeLine" data-text="一开始我就觉得——你打游戏真的很认真🎮"></div>
-
         <div class="typeLine small" data-text="后来我发现，你不只认真，还特别细心、特别真诚✨"></div>
-
         <div class="typeLine small" data-text="每次我都会偷偷期待：这次会不会是你😎"></div>
-
         <div class="typeLine" data-text="那句『我一定在哥这里是最特殊的』，把我藏着的心思掀开了💗"></div>
 
         <!-- 笨拙表达感 -->
-
         <div class="typeLine small" data-text="书到用时方恨少，怪我语文没学好📖"></div>
-
         <div class="typeLine small" data-text="可能表达有点笨笨的，没有把心里的话都说清楚🥺"></div>
-
         <div class="typeLine" data-text="但我想让你知道——我喜欢你是很认真的💞"></div>
-
         <div class="typeLine small" data-text="我可能不是最会说话的人，但我是最想陪着你的人🌙"></div>
 
         <!-- 情绪推进 -->
-
         <div class="typeLine small" data-text="我第一次和一个女孩子打这么久电话，让我更多的了解你📞"></div>
-
         <div class="typeLine small" data-text="你说你吃药住院那刻，我的心没理由地抽了一下😣"></div>
-
         <div class="typeLine" data-text="我不想再不够勇敢了——这一次，我不想放手✨"></div>
-
         <div class="typeLine small" data-text="我想变得更好，想和小依依每天都吃上小蛋糕🍰"></div>
 
         <!-- 甜甜收束 -->
-
         <div class="typeLine" data-text="你笑起来真的超级超级可爱 😍"></div>
-
         <div class="typeLine small" data-text="和你在一起时间过得特别快 ✨"></div>
-
         <div class="typeLine small" data-text="每天都想见到你 ❣️"></div>
-
         <div class="typeLine" data-text="我是真的真的超级超级喜欢你 💗"></div>
-
         <div class="typeLine small" data-text="你愿意继续更多的喜欢我吗？做我的公主殿下🥰"></div>
-
 
       </div>
 
       <div class="btnRow" id="btnRow">
         <button class="action" id="yesBtn">愿意 💗</button>
-
         <button class="action" id="noBtn">不愿意 😭</button>
-
       </div>
 
       <div class="hint" id="hint1" style="display:none;">（哼，你敢把鼠标移到“不愿意”试呢）</div>
-
     </div>
   </section>
 
   <!-- 幕2：愿意后文字一排排出现，最后给“继续”按钮 -->
-
   <section class="screen hidden" id="screen2">
-
     <div class="card">
-
       <h1>嘿嘿…那我就不装啦 💘</h1>
 
       <div class="confessionWrap" id="confessionWrap"></div>
 
       <div class="finalRevealRow" id="finalRevealRow">
-
-        <button class="action" id="goFinalBtn">爱你宝宝 💗</button>
-
+        <button class="action" id="goFinalBtn">继续看最后一句 💗</button>
       </div>
 
       <div class="hint">（点按钮后，会进入最后一幕哦）</div>
-
     </div>
   </section>
 
   <!-- 幕3：很多爱心 + 中间峰峰❤️依依 -->
-
   <section class="screen hidden" id="screen3">
-
     <div class="finalStage">
-
       <h1 style="margin-bottom:0;">嘘…看这里 💞</h1>
 
       <div class="finalBox" id="finalBox">
-
         <div class="bigHeart" id="bigHeart">
-
           <div class="bigHeartInner">
-
             <div class="finalText" id="finalText"></div>
-            
           </div>
         </div>
       </div>
@@ -401,7 +357,7 @@
   </section>
 
   <audio id="bgm" preload="auto" loop>
-    <source src="3月2日.MP3" type="audio/mpeg">
+    <source src="暧昧期.mp3" type="audio/mpeg">
   </audio>
 
   <script>
@@ -751,7 +707,6 @@
       "",
       "和如意还有未来的小金毛一起过每一天 🐕",
     ];
-
     async function revealYesLinesSlower(){
       confessionWrap.innerHTML = "";
       finalRevealRow.style.display = "none";
@@ -832,130 +787,6 @@
 
     /***********************
      * 流程
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     *
      ***********************/
     let started = false;
 
@@ -988,7 +819,7 @@
       await enterFinalScene();
     });
 
-    // 音乐被拦截就再点一下页面
+    // 兜底：音乐被拦截就再点一下页面
     document.body.addEventListener("click", ()=>{
       if(started && bgm.paused){
         bgm.play().catch(()=>{});
